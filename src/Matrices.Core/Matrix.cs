@@ -380,11 +380,7 @@ namespace Matrices.Core
             var M = Copy();
 
             var size = Width;
-            var ematrix = new Matrix(Height, Width);
-            for (var i = 0; i < size; i++)
-            {
-                ematrix[i, i] = 1;
-            }
+            var ematrix = IdentityMatrix(size);
 
             for (var i = 0; i < size; i++)
             {
